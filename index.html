@@ -1,0 +1,890 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Instituto Olhar Premium</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+  
+  <!-- Responsive Design CSS -->
+  <link href="assets/css/responsive.css" rel="stylesheet">
+
+  <script>
+    // Salvar a posição do scroll antes da atualização
+    window.addEventListener('beforeunload', function() {
+      localStorage.setItem('scrollPosition', window.scrollY);
+    });
+    
+    // Restaurar a posição do scroll após o carregamento
+    window.addEventListener('load', function() {
+      const scrollPosition = localStorage.getItem('scrollPosition');
+      if (scrollPosition) {
+        window.scrollTo(0, parseInt(scrollPosition));
+        // Limpar posição salva para não interferir em novas navegações
+        localStorage.removeItem('scrollPosition');
+      }
+    });
+  </script>
+
+  <!-- =======================================================
+  * Template Name: Dewi
+  * Template URL: https://bootstrapmade.com/dewi-free-multi-purpose-html-template/
+  * Updated: Aug 07 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body class="index-page">
+
+  <!--Navbar--> 
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center">
+
+      <a href="index.html" class="logo d-flex align-items-center me-auto">
+        <img src="assets/img/logonavbar].png" alt="Logo Olhar Premium" style="height:48px; margin-right:12px;">
+        <h1 class="sitename mb-0" style="white-space:nowrap; margin-right:40px;">Instituto <span class="gold-gradient-text">Olhar</span> <span class="gold-gradient-text">Premium</span></h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="#hero" class="active">Home</a></li>
+          <li><a href="#about">Sobre Nós</a></li>
+          <li><a href="#services">Serviços</a></li>
+          <li><a href="#location">Endereço</a></li>
+          <!-- 'Equipe' link removed (section removed) -->
+          <li><a href="#footer">Contatos</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+  <a class="cta-btn" href="https://agendaolharpremium.com.br/" target="_blank" rel="noopener">Agendar</a>
+
+    </div>
+  </header>
+<!--End Navbar-->
+
+  <main class="main">
+
+  <!-- Seção Hero (bemvindo...) -->
+
+    <section id="hero" class="hero section dark-background" style="min-height: calc(100vh - 80px); display: flex; align-items: center; justify-content: center;">
+      <div class="video-overlay" style="position:absolute; top:0; left:0; width:100%; height:100%; background: rgba(0,0,0,0.4); z-index:1;"></div>
+      
+      <video autoplay loop muted playsinline id="heroVideo" style="position:absolute; width:100%; height:100%; object-fit:cover; top:0; left:0; z-index:0;" data-aos="fade-in">
+        <source src="assets/img/fundoheader.MP4" type="video/mp4">
+        Seu navegador não suporta vídeo em HTML5.
+      </video>
+
+      <div class="container d-flex flex-column align-items-center position-relative" style="z-index:2;">
+        <h2 data-aos="fade-up" data-aos-delay="100" style="text-shadow: 2px 2px 4px rgba(0,0,0,0.5);"> Bem-Vindo ao Instituto <span class="gold-gradient-text">Olhar Premium</span></h2>
+        <p data-aos="fade-up" data-aos-delay="200" style="text-shadow: 2px 2px 4px rgba(0,0,0,0.5);">Oftalmologia Clínica e Cirurgica</p>
+        <div class="d-flex mt-4" data-aos="fade-up" data-aos-delay="300">
+          <a href="https://agendaolharpremium.com.br/" class="btn-get-started mx-auto" target="_blank" rel="noopener">Agendar Consulta</a>
+        </div>
+      </div>
+
+    </section><!-- /Seção hero -->
+
+    <li></li>
+    <!-- sobre-nós -->
+    <section id="about" class="about section">
+
+      <div class="container">
+
+        <div class="row gy-4 align-items-center">
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="about-card-left" style="background: linear-gradient(135deg, #001a33 0%, #003d66 100%); border-radius: 16px; padding: 40px; min-height: 400px; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center;">
+              <img src="assets/img/logo.jpg " class="img-fluid rounded-4 mb-4" alt="" style="max-width: 200px;">
+              <h3 style="color: #fff; margin-bottom: 15px;">Instituto</h3>
+              <h2 class="gold-gradient-text" style="font-size: 2.5rem; margin: 0 0 10px 0;">OLHAR PREMIUM</h2>
+              <p style="color: #fff; font-size: 0.95rem;">OFTALMOLOGIA CLÍNICA E CIRÚRGICA</p>
+            </div>
+          </div>
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="250">
+            <div class="content">
+              <h3>Conheça um pouco sobre nossa Clínica</h3>
+              <p>No Instituto Olhar Premium, unimos tecnologia de ponta, equipe altamente qualificada e atendimento humanizado para cuidar da sua visão com excelência. Nossa missão é proporcionar saúde ocular com qualidade, segurança e confiança, em um ambiente moderno e acolhedor.</p>
+              
+              <p class="fst-italic" style="color: #666; font-size: 0.95rem; margin-top: 20px;">
+                Na nossa clínica, você encontra um ambiente acolhedor e profissionais dedicados a oferecer o melhor cuidado para a sua visão.
+              </p>
+              <ul style="margin-top: 15px;">
+                <li><i class="bi bi-check-circle-fill blue-gradient-icon"></i> <span>Atendimento especializado em oftalmologia para todas as idades</span></li>
+                <li><i class="bi bi-check-circle-fill blue-gradient-icon"></i> <span>Estrutura moderna com equipamentos de última geração</span></li>
+                <li><i class="bi bi-check-circle-fill blue-gradient-icon"></i> <span>Equipe médica experiente e comprometida com o seu bem-estar</span></li>
+              </ul>
+              <p style="margin-top: 20px;">
+                Aqui, cada paciente é tratado de forma única, com cuidado e atenção em cada detalhe. Venha viver a experiência de enxergar o mundo com outros olhos.
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /sobre-nós -->
+
+    <!-- Areas de atuação / serviços -->
+    <section id="services" class="services section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Serviços</h2>
+        <p>Áreas de Atuação<br></p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-5">
+          <!-- Início dos cards das áreas -->
+          <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="200">
+            <div class="service-item">
+              <div class="img">
+                <img src="assets/img/areas/catarata.jpeg" class="img-fluid" alt="Catarata">
+              </div>
+              <div class="details position-relative">
+                <div class="icon">
+                  <i class="bi bi-eye"></i>
+                </div>
+                <h3>Catarata</h3>
+              <p class="area-desc">A catarata é a perda da transparência do cristalino, que deixa a visão embaçada e pode ser corrigida com cirurgia.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="220">
+            <div class="service-item">
+              <div class="img">
+                <img src="assets/img/areas/ceratocone.jpeg" class="img-fluid" alt="Ceratocone">
+              </div>
+              <div class="details position-relative">
+                <div class="icon">
+                  <i class="bi bi-eye"></i>
+                </div>
+                <h3>Ceratocone</h3>
+              <p class="area-desc">O ceratocone afina e deforma a córnea, causando visão distorcida  quanto antes diagnosticado, melhor o controle.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="240">
+            <div class="service-item">
+              <div class="img">
+                <img src="assets/img/areas/Cirurgia refrativa.jpeg" class="img-fluid" alt="Cirurgia Refrativa">
+              </div>
+              <div class="details position-relative">
+                <div class="icon">
+                  <i class="bi bi-eye"></i>
+                </div>
+                <h3>Cirurgia Refrativa</h3>
+              <p class="area-desc">A cirurgia refrativa corrige erros de refração como miopia e astigmatismo, reduzindo a dependência de óculos.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="260">
+            <div class="service-item">
+              <div class="img">
+                <img src="assets/img/areas/cornea.jpeg" class="img-fluid" alt="Córnea">
+              </div>
+              <div class="details position-relative">
+                <div class="icon">
+                  <i class="bi bi-eye"></i>
+                </div>
+                <h3>Córnea</h3>
+              <p class="area-desc">A córnea é a lente natural do olho qualquer alteração nela pode comprometer a qualidade da visão.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="280">
+            <div class="service-item">
+              <div class="img">
+                <img src="assets/img/areas/glaucoma.jpeg" class="img-fluid" alt="Glaucoma">
+              </div>
+              <div class="details position-relative">
+                <div class="icon">
+                  <i class="bi bi-eye"></i>
+                </div>
+                <h3>Glaucoma</h3>
+              <p class="area-desc">O glaucoma é silencioso e perigoso: ele danifica o nervo óptico e pode levar à cegueira se não tratado.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="300">
+            <div class="service-item">
+              <div class="img">
+                <img src="assets/img/areas/lentes de contato.jpeg" class="img-fluid" alt="Lentes de Contato">
+              </div>
+              <div class="details position-relative">
+                <div class="icon">
+                  <i class="bi bi-eye"></i>
+                </div>
+                <h3>Lentes de Contato</h3>
+              <p class="area-desc">As lentes de contato oferecem praticidade, mas exigem cuidados rigorosos para evitar infecções.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="320">
+            <div class="service-item">
+              <div class="img">
+                <img src="assets/img/areas/plastica ocular.jpeg" class="img-fluid" alt="Plástica Ocular">
+              </div>
+              <div class="details position-relative">
+                <div class="icon">
+                  <i class="bi bi-eye"></i>
+                </div>
+                <h3>Plástica Ocular</h3>
+              <p class="area-desc">A plástica ocular melhora a estética e a função das pálpebras, trazendo mais conforto e autoestima.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="340">
+            <div class="service-item">
+              <div class="img">
+                <img src="assets/img/areas/retina e vitreo imagem.jpeg" class="img-fluid" alt="Retina e Vítreo">
+              </div>
+              <div class="details position-relative">
+                <div class="icon">
+                  <i class="bi bi-eye"></i>
+                </div>
+                <h3>Retina e Vítreo</h3>
+              <p class="area-desc">Exames oftalmológicos regulares são essenciais para detectar precocemente problemas que podem afetar sua visão.</p>
+              </div>
+            </div>
+          </div>
+          <!-- Fim dos cards das áreas -->
+
+          <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="200">
+            <div class="service-item">
+              <div class="img">
+                <img src="assets/img/areas/examesdiversos.jpg" class="img-fluid" alt="">
+              </div>
+              <div class="details position-relative">
+                <div class="icon">
+                  <i class="bi bi-activity"></i>
+                </div>
+                <a href="service-details.html" class="stretched-link">
+                  <h3>exames diversos</h3>
+                </a>
+                <p>Exames oftalmológicos regulares são essenciais para detectar precocemente problemas que podem afetar sua visão.</p>
+              </div>
+            </div>
+          </div><!-- End Service Item -->
+
+
+        </div>
+
+      </div>
+       
+      
+
+    </section><!-- Areas de atuação / serviços -->  
+
+    <li></li> 
+    <li></li>
+
+    <!-- Features Section -->
+    <section id="features" class="features section">
+
+      <div class="container">
+
+        <ul class="nav nav-tabs row  d-flex" data-aos="fade-up" data-aos-delay="100">
+          <li class="nav-item col-lg-2_4">
+            <a class="nav-link active show" data-bs-toggle="tab" data-bs-target="#features-tab-1">
+              <i class="bi bi-person-badge"></i>
+              <h4 class="d-none d-lg-block">CEO</h4>
+            </a>
+          </li>
+          <li class="nav-item col-lg-2_4">
+            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#features-tab-academic">
+              <i class="bi bi-book"></i>
+              <h4 class="d-none d-lg-block">Formação Acadêmica</h4>
+            </a>
+          </li>
+          <li class="nav-item col-lg-2_4">
+            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#features-tab-2">
+              <i class="bi bi-award"></i>
+              <h4 class="d-none d-lg-block">Valores da Clínica</h4>
+            </a>
+          </li>
+          <li class="nav-item col-lg-2_4">
+            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#features-tab-3">
+              <i class="bi bi-graph-up-arrow"></i>
+              <h4 class="d-none d-lg-block">Impacto e Reconhecimento</h4>
+            </a>
+          </li>
+          <li class="nav-item col-lg-2_4">
+            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#features-tab-4">
+              <i class="bi bi-award"></i>
+              <h4 class="d-none d-lg-block">Excelência e Inovação</h4>
+            </a>
+          </li>
+        </ul><!-- End Tab Nav -->
+
+        <div class="tab-content" data-aos="fade-up" data-aos-delay="200">
+
+          <div class="tab-pane fade active show" id="features-tab-1">
+            <div class="row">
+              <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0">
+                <h3>Dr. Vitor Manteufel</h3>
+                <p class="fst-italic">
+                  CEO e Diretor Clínico do Instituto Olhar Premium
+                </p>
+                <ul>
+                  <li><i class="bi bi-check2-all"></i> <span>“Acreditamos que enxergar bem é viver melhor. Nosso compromisso é devolver qualidade de vida aos nossos pacientes com ética, empatia e resultados.”</span></li>
+                </ul>
+                <p>
+                  Dr. Vitor Martins Neto Manteufel
+Médico Oftalmologista • CRM-MG 70.296 | CRM-SC 32.670
+CEO e Diretor Clínico
+Dr. Vitor Manteufel acredita que enxergar bem é sinônimo de viver melhor. Por isso, dedica sua carreira a oferecer soluções avançadas para catarata, erros refrativos e doenças da retina, sempre com tecnologia de ponta e cirurgias altamente personalizadas.
+Idealizador do Protocolo Visão Premium, uniu sua experiência prática e formação completa  em catarata, cirurgia refrativa, retina clínica e cirúrgica, além de glaucoma  para criar um método preciso, moderno e focado em resultados reais.
+Com mais de 15.000 cirurgias realizadas, reúne técnica apurada, segurança e uma visão refinada para conduzir desde casos simples até os mais complexos. Seu compromisso é entregar uma visão de alta performance e devolver autonomia, liberdade e qualidade de vida aos pacientes.
+Veja o mundo com outros olhos.
+                </p>
+                <p>
+                  Sob sua liderança, o Instituto se destaca pela busca incessante da qualidade, pelo investimento em infraestrutura moderna e pela formação de uma equipe altamente qualificada. O Dr. Vitor Manteufel inspira todos à sua volta com sua paixão pela medicina e sua visão de futuro voltada à excelência e ao cuidado integral com o paciente.
+                </p>
+              </div>
+              <div class="col-lg-6 order-1 order-lg-2 text-center">
+                <img src="assets/img/vitorceodiretor.jpg" alt="" class="img-fluid" style="max-height: 500px; height: auto; max-width: 100%; width: auto;">
+              </div>
+            </div>
+          </div><!-- End Tab Content Item -->
+
+          <div class="tab-pane fade" id="features-tab-academic">
+            <div class="row">
+              <div class="col-lg-12">
+                <h3>Formação Acadêmica</h3>
+                <p class="fst-italic">
+                  Dr. Vitor Martins Neto Manteufel
+                </p>
+                <p>
+                  Dr. Vitor Manteufel possui uma formação sólida e abrangente em oftalmologia, construída em instituições de referência em Minas Gerais e voltada ao domínio completo das principais áreas da especialidade.
+                </p>
+                <ul>
+                  <li><i class="bi bi-check2-all"></i> <span><strong>Graduação em Medicina</strong> - Universidade Presidente Antônio Carlos (Juiz de Fora/MG) • 2010–2016</span></li>
+                  <li><i class="bi bi-check2-all"></i> <span><strong>Residência Médica em Oftalmologia</strong> - Fundação Hilton Rocha (Belo Horizonte/MG) • 2017–2019</span></li>
+                  <li><i class="bi bi-check2-all"></i> <span><strong>Fellowship em Segmento Anterior</strong> - Hospital Evangélico de Minas Gerais, com foco em catarata e cirurgia refrativa • 2019–2021</span></li>
+                  <li><i class="bi bi-check2-all"></i> <span><strong>Fellowship em Glaucoma</strong> - Hospital das Clínicas da UFMG/EBSERH, com ênfase em glaucoma congênito e adulto • 2022–2023</span></li>
+                  <li><i class="bi bi-check2-all"></i> <span><strong>Fellowship em Retina Clínica e Cirúrgica</strong> - Hospital Evangélico de Minas Gerais, com foco em retina médica, laser e procedimentos cirúrgicos • 2023–2025</span></li>
+                </ul>
+                <p>
+                  Dr. Vitor é credenciado pelo <strong>Conselho Brasileiro de Oftalmologia (CBO)</strong> e membro da <strong>ABCCR/BRASCRS</strong>, atuando com excelência nas áreas de catarata, cirurgia refrativa, retina e glaucoma.
+                </p>
+                <p>
+                  Ao longo da carreira, já realizou mais de <strong>15.000 cirurgias</strong>, consolidando-se como um médico altamente qualificado, com experiência sólida em casos complexos e resultados de alta performance.
+                </p>
+              </div>
+            </div>
+          </div><!-- End Tab Content Item -->
+
+          <div class="tab-pane fade" id="features-tab-2">
+            <div class="row">
+              <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0">
+                <h3>Valores da Clínica</h3>
+                <p>
+                  No Instituto Olhar Premium, acreditamos que cuidar da visão é cuidar da vida. 
+                  Nossos valores refletem esse compromisso:
+                </p>
+                <ul>
+                  <li><i class="bi bi-check2-all"></i> <span>Excelência Médica: Profissionais especializados e tecnologia de ponta para garantir diagnósticos precisos e tratamentos eficazes.</span></li>
+                  <li><i class="bi bi-check2-all"></i> <span>Humanização no Atendimento: Cada paciente é acolhido com empatia, respeito e atenção personalizada.</span></li>
+                  <li><i class="bi bi-check2-all"></i> <span>Ética e Transparência: Atuamos com responsabilidade, clareza e compromisso em cada etapa do cuidado.</span></li>
+                  <li><i class="bi bi-check2-all"></i> <span>Inovação Contínua: Investimos em conhecimento e equipamentos modernos para oferecer o que há de melhor em oftalmologia.</span></li>
+                </ul>
+              </div>
+              <div class="col-lg-6 order-1 order-lg-2 d-flex align-items-center justify-content-center">
+                <div class="img-container" style="max-width: 450px;">
+                  <img src="assets/img/valoresdaclinica.jpeg" alt="Valores da Clínica" class="img-fluid rounded shadow-lg" style="width: 100%; object-fit: contain;">
+                </div>
+              </div>
+            </div>
+          </div><!-- End Tab Content Item -->
+
+          <div class="tab-pane fade" id="features-tab-3">
+            <div class="row">
+              <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0">
+                <h3>Impacto e Reconhecimento</h3>
+                <p>
+                  O Instituto Olhar Premium tem se destacado por sua excelência e compromisso com a saúde ocular,
+                  alcançando marcos significativos em nossa trajetória:
+                </p>
+                <ul>
+                  
+                  <li><i class="bi bi-check2-all"></i> <span>Referência em cirurgias oftalmológicas de alta precisão na região, com taxa de satisfação superior a 98%.</span></li>
+                  <li><i class="bi bi-check2-all"></i> <span>Reconhecimento na região em procedimentos avançados e tecnologias inovadoras para tratamentos oculares.</span></li>
+                  <li><i class="bi bi-check2-all"></i> <span>Equipe constantemente atualizada com as últimas técnicas e práticas.</span></li>
+                  <li><i class="bi bi-check2-all"></i> <span>Reconhecimento por sociedades médicas pela excelência em atendimento e resultados clínicos.</span></li>
+                </ul>
+                <p class="fst-italic mt-4">
+                  "Nossa maior conquista é ver a satisfação e o sorriso de nossos pacientes ao recuperarem sua qualidade de vida através de uma visão melhor."
+                </p>
+              </div>
+              <div class="col-lg-6 order-1 order-lg-2 d-flex align-items-center justify-content-center">
+                <div class="img-container" style="max-width: 450px;">
+                  <img src="assets/img/impactos.jpeg" alt="Impacto e Reconhecimento" class="img-fluid rounded shadow-lg" style="width: 100%; object-fit: contain;">
+                </div>
+              </div>
+              <div class="col-lg-6 order-1 order-lg-2 text-center">
+                <img src="assets/img/working-3.jpg" alt="" class="img-fluid">
+              </div>
+            </div>
+          </div><!-- End Tab Content Item -->
+
+          <div class="tab-pane fade" id="features-tab-4">
+            <div class="row">
+              <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0">
+                <h3>Excelência e Inovação</h3>
+                <p>
+                  Acreditamos que a excelência nasce da união entre conhecimento, tecnologia e cuidado humano.
+                  No Instituto Olhar Prêmio, investimos continuamente em equipamentos de última geração, infraestrutura moderna 
+                  e capacitação da equipe médica, garantindo diagnósticos precisos e tratamentos personalizados para cada paciente.
+                </p>
+                <p>
+                  Nosso compromisso é estar sempre à frente, trazendo o que há de mais avançado na oftalmologia para proporcionar 
+                  resultados eficazes, seguros e humanizados.
+                </p>
+                <ul class="mt-4">
+                  <li><i class="bi bi-check-circle-fill text-primary me-2"></i>Equipamentos de alta tecnologia e precisão diagnóstica</li>
+                  <li><i class="bi bi-check-circle-fill text-primary me-2"></i>Treinamento constante e atualização profissional</li>
+                  <li><i class="bi bi-check-circle-fill text-primary me-2"></i>Ambientes modernos, acolhedores e seguros</li>
+                </ul>
+                </p>
+                
+              </div>
+              <div class="col-lg-6 order-1 order-lg-2 d-flex align-items-center justify-content-center">
+                <div class="img-container" style="max-width: 450px;">
+                  <img src="assets/img/excelencia.jpeg" alt="Excelência e Inovação" class="img-fluid rounded shadow-lg" style="width: 100%; object-fit: contain;">
+                </div>
+              </div>
+            </div>
+          </div><!-- End Tab Content Item -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Features Section -->
+
+    <!-- Services 2 Section -->
+    <section id="services-2" class="services-2 section light-background">
+
+      <li></li>
+
+         <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials section dark-background">
+
+  <img src="assets/img/logo.jpg" class="testimonials-bg" alt="">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        
+        <div class="section-title mb-5 text-center">
+          <h2>O que nossos pacientes dizem</h2>
+          <p>Confira as avaliações e depoimentos de quem confia em nós</p>
+          <div style="margin-top: 20px; display: flex; justify-content: center; align-items: center; gap: 15px;">
+            <img src="assets/img/logogoogle-removebg-preview.png" alt="Google Reviews" style="height: 35px;">
+            <span style="color: rgba(255, 255, 255, 0.8); font-size: 18px; font-weight: 600;">Google Reviews</span>
+          </div>
+        </div>
+
+        <div class="swiper init-swiper">
+          <script type="application/json" class="swiper-config">
+            {
+              "loop": true,
+              "speed": 600,
+              "autoplay": {
+                "delay": 5000
+              },
+              "slidesPerView": "auto",
+              "pagination": {
+                "el": ".swiper-pagination",
+                "type": "bullets",
+                "clickable": true
+              }
+            }
+          </script>
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="assets/img/clientes/cliente 1.png" class="testimonial-img" alt="">
+                <h3>Davi Hernanes</h3>
+                <h4>Cliente</h4>
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>ótimos profissionais, lugar de paz e tranquilidade e ótimo atendimento
+</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="assets/img/clientes/cliente 3.png" class="testimonial-img" alt="">
+                <h3>Maricy Mor Cansian</h3>
+                <h4>Paciente</h4>
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>Excelente atendimento e estrutura maravilhosa. Recomendo!
+</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="assets/img/clientes/cliente 2.png" class="testimonial-img" alt="">
+                <h3>Jhanaynna Fortes</h3>
+                <h4>Paciente</h4>
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>Excelente atendimento!
+</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="assets/img/clientes/cliente 4.png" class="testimonial-img" alt="">
+                <h3>Lauren Ferreira</h3>
+                <h4>Paciente</h4>
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>Um lugar super agradável e aconchegante, com ótimos profissionais e um excelente atendimento. 💙✨ Excelência.
+</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="assets/img/clientes/cliente 5.png" class="testimonial-img" alt="">
+                <h3>Rudo</h3>
+                <h4>Paciente</h4>
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>Dr. vitor um excelente profissional, clínica bastante linda e o atendimento 100% de feedback
+</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+        <div class="text-center mt-5">
+          <p style="font-size: 16px; color: rgba(255, 255, 255, 0.8); margin-bottom: 20px;">
+            Somos altamente avaliados no Google. Veja todas as avaliações!
+          </p>
+          <a href="https://www.google.com/search?q=Instituto+Olhar+Premium" target="_blank" rel="noopener" class="btn-cta" style="display: inline-flex; align-items: center; gap: 10px; padding: 12px 30px; background: linear-gradient(135deg, #ffc107 0%, #ff9800 100%); color: #fff; border-radius: 8px; text-decoration: none; font-weight: 600; transition: all 0.3s ease; box-shadow: 0 4px 15px rgba(255, 193, 7, 0.3);">
+            <img src="assets/img/logogoogle-removebg-preview.png" alt="Google" style="height: 20px;">
+            Ver avaliações no Google
+          </a>
+        </div>
+
+      </div>
+
+    </section><!-- /Testimonials Section -->
+
+
+
+    <!-- Team Section removed -->
+    <!-- Team Section fully removed -->
+   
+
+        </div>
+
+      </div>
+
+    <li></li>
+
+    <!-- Google Maps Section -->
+    <section id="location" class="map-section section">
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Localização</h2>
+        <p>Nossas Unidades</p>
+      </div><!-- End Section Title -->
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row">
+          <!-- Chapecó Map -->
+          <div class="col-md-6 mb-4">
+            <div class="card h-100">
+              <div class="card-body">
+                <h5 class="card-title mb-3">Unidade Chapecó</h5>
+                <iframe
+                  style="border:0; width: 100%; height: 300px;"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d500!2d-52.615121863771094!3d-27.10268601849218!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjfCsDA2JzA5LjciUyA1MsKwMzYnNTQuNCJX!5e0!3m2!1spt-BR!2sbr!4v1699534532247!5m2!1spt-BR!2sbr"
+                  frameborder="0"
+                  allowfullscreen></iframe>
+                <p class="card-text mt-3">
+                  <strong>Endereço:</strong><br>
+                  EDIFÍCIO MEDITERRANEO<br>
+                  Av. Getúlio Dorneles Vargas, 227<br>
+                  Sala 304, 3° andar - Centro<br>
+                  Chapecó - SC
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Xanxerê Map -->
+          <div class="col-md-6 mb-4">
+            <div class="card h-100">
+              <div class="card-body">
+                <h5 class="card-title mb-3">Unidade Xanxerê</h5>
+                <iframe
+                  style="border:0; width: 100%; height: 300px;"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3548.5436234654147!2d-52.40598388846556!3d-27.215825976747498!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94e4c3c69c6f5dd7%3A0x40c7cb7561016d52!2sR.%20Gen.%20Os%C3%B3rio%2C%20155%20-%20Centro%2C%20Xanxer%C3%AA%20-%20SC%2C%2089820-000!5e0!3m2!1spt-BR!2sbr"
+                  frameborder="0"
+                  allowfullscreen></iframe>
+                <p class="card-text mt-3">
+                  <strong>Endereço:</strong><br>
+                  R. Gen. Osório, 155<br>
+                  Sala 02, Centro<br>
+                  Xanxerê - SC, 89820-000
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer id="footer" class="footer dark-background">
+    <div class="container footer-top">
+      <div class="row gy-4">
+        <!-- Coluna 1: Sobre e Redes Sociais -->
+        <div class="col-lg-4 col-md-6 footer-info">
+          <a href="index.html" class="logo d-flex align-items-center mb-4">
+            <img src="assets/img/logonavbar].png" alt="Logo Olhar Premium" style="height:40px; margin-right:10px;">
+            <span class="sitename">Instituto Olhar Premium</span>
+          </a>
+                    <p class="mb-4">Comprometidos com a excelência em oftalmologia, oferecemos atendimento humanizado e tecnologia de ponta para cuidar da sua saúde ocular.</p>
+          <div class="social-links d-flex mt-4">
+            <a href="https://wa.me/554999527601" target="_blank" rel="noopener" class="whatsapp" title="WhatsApp">
+              <i class="bi bi-whatsapp"></i>
+            </a>
+            <a href="https://www.instagram.com/instituto_olharpremium/" target="_blank" rel="noopener" class="instagram" title="Instagram">
+              <i class="bi bi-instagram"></i>
+            </a>
+            <a href="https://www.tiktok.com/@instituto_olharpremium" target="_blank" rel="noopener" class="tiktok" title="TikTok">
+              <i class="bi bi-tiktok"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Coluna 2: Links Úteis -->
+        <div class="col-lg-2 col-md-6 footer-links">
+          <h4>Links Úteis</h4>
+          <ul>
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">Sobre Nós</a></li>
+            <li><a href="#services">Serviços</a></li>
+            <li><a href="#location">Localização</a></li>
+            <li><a href="#contact">Contato</a></li>
+          </ul>
+        </div>
+
+        <!-- Coluna 3: Políticas -->
+        <div class="col-lg-2 col-md-6 footer-links">
+          <h4>Políticas</h4>
+          <ul>
+            <li><a href="terms.html">Termos de Serviço</a></li>
+            <li><a href="privacy.html">Política de Privacidade</a></li>
+            <li><a href="cookies.html">Política de Cookies</a></li>
+          </ul>
+        </div>
+
+        <!-- Coluna 4: Contato -->
+        <div class="col-lg-4 col-md-6 footer-contact">
+          <h4>Contato</h4>
+          <div class="contact-info">
+            <div class="location-info mb-4">
+              <p class="mb-2"><strong>Unidade Chapecó:</strong></p>
+              <p class="mb-1">EDIFÍCIO MEDITERRANEO</p>
+              <p class="mb-1">Av. Getúlio Dorneles Vargas, 227</p>
+              <p class="mb-1">Sala 304, 3° andar - Centro</p>
+              <p class="mb-2">Chapecó - SC</p>
+              <a href="https://maps.google.com/maps?q=-27.10268601849218,-52.615121863771094" target="_blank" rel="noopener" class="btn btn-sm btn-outline-light">
+                <i class="bi bi-geo-alt"></i> Ver no Maps
+              </a>
+            </div>
+
+            <div class="location-info mb-4">
+              <p class="mb-2"><strong>Unidade Xanxerê:</strong></p>
+              <p class="mb-1">R. Gen. Osório, 155</p>
+              <p class="mb-1">Sala 02, Centro</p>
+              <p class="mb-2">Xanxerê - SC, 89820-000</p>
+              <a href="https://maps.google.com/maps?q=R.+Gen.+Osório,+155+-+Sala+02+-+Centro,+Xanxerê+-+SC,+89820-000" target="_blank" rel="noopener" class="btn btn-sm btn-outline-light">
+                <i class="bi bi-geo-alt"></i> Ver no Maps
+              </a>
+            </div>
+
+            <div class="contact-methods">
+              <p class="mb-2">
+                <i class="bi bi-telephone me-2"></i>
+                <strong>Telefone:</strong> +55 (49) 9952-7601
+              </p>
+              <p class="mb-2">
+                <i class="bi bi-envelope me-2"></i>
+                <strong>Email:</strong> olharpremiumchapeco@gmail.com
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container copyright text-center mt-4">
+      <p>&copy; 2025 <strong>Instituto Olhar Premium</strong>. Todos os direitos reservados.</p>
+    </div>
+          
+
+        <!-- 'Our Services' footer column removed -->
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+
+
+
+    <!-- Botão Flutuante Instagram -->
+    <a href="https://www.instagram.com/drvitormanteufel?igsh=MXR0MzRnemRubjN1NA==" target="_blank" rel="noopener" id="instagram-float" style="position:fixed;bottom:110px;right:32px;z-index:9999;background:linear-gradient(45deg,#f09433,#e6683c,#dc2743,#cc2366,#bc1888);border-radius:50%;width:64px;height:64px;display:flex;align-items:center;justify-content:center;box-shadow:0 2px 8px rgba(0,0,0,0.2);">
+        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg" alt="Instagram" style="width:36px;height:36px;filter:brightness(0) invert(1);">
+    </a>
+
+    <!-- Botão Flutuante WhatsApp -->
+    <a href="https://wa.me/554999527601" target="_blank" rel="noopener" id="whatsapp-float" style="position:fixed;bottom:32px;right:32px;z-index:9999;background:#25d366;border-radius:50%;width:64px;height:64px;display:flex;align-items:center;justify-content:center;box-shadow:0 2px 8px rgba(0,0,0,0.2);">
+        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/whatsapp.svg" alt="WhatsApp" style="width:36px;height:36px;filter:brightness(0) invert(1);">
+    </a>
+
+    <style>
+      #instagram-float {
+        bottom: 110px !important;
+        right: 32px !important;
+      }
+      #whatsapp-float {
+        bottom: 32px !important;
+        right: 32px !important;
+      }
+      @media (max-width: 600px) {
+        #instagram-float {
+          bottom: 100px !important;
+          right: 16px !important;
+        }
+        #whatsapp-float {
+          bottom: 22px !important;
+          right: 16px !important;
+        }
+      }
+    </style>
+
+  <!-- Cookie Consent Box -->
+  <style>
+    #cookie-consent-box{
+      position:fixed;
+      right:20px;
+      bottom:20px;
+      z-index:99999;
+      background:rgba(18,18,18,0.95);
+      color:#fff;
+      padding:14px 16px;
+      border-radius:12px;
+      box-shadow:0 8px 30px rgba(0,0,0,0.25);
+      max-width:380px;
+      font-size:14px;
+      display:none;
+      align-items:center;
+      gap:12px;
+    }
+    #cookie-consent-box.show{ display:flex; }
+    #cookie-consent-box .cookie-icon{ font-size:20px; }
+    #cookie-consent-box .cookie-title{ font-weight:600; margin-bottom:6px; }
+    #cookie-consent-box p{ margin:0; color:rgba(255,255,255,0.92); line-height:1.3; }
+    #cookie-consent-box a{ color:#7ecbff; text-decoration:underline; }
+    #accept-cookies-btn{ background:#fff; color:#111; border:none; padding:8px 12px; border-radius:8px; cursor:pointer; }
+    @media(max-width:600px){
+      #cookie-consent-box{ left:16px; right:16px; bottom:16px; max-width:unset; }
+    }
+  </style>
+
+  <div id="cookie-consent-box" role="dialog" aria-live="polite">
+    <span class="cookie-icon" aria-hidden="true">🍪</span>
+    <div style="flex:1">
+      <div class="cookie-title">Nós usamos cookies!</div>
+      <p>Utilizamos cookies para personalizar sua experiência, analisar o tráfego e oferecer funcionalidades avançadas. Para saber mais, leia nossa <a href="cookies.html">Política de Cookies</a>.</p>
+    </div>
+    <button id="accept-cookies-btn">Aceitar</button>
+  </div>
+
+  <script>
+    // Exibe o box se o consentimento não foi dado
+    if (!localStorage.getItem('cookiesAccepted')) {
+      document.getElementById('cookie-consent-box').classList.add('show');
+    }
+    document.getElementById('accept-cookies-btn').onclick = function() {
+      localStorage.setItem('cookiesAccepted', 'true');
+      document.getElementById('cookie-consent-box').classList.remove('show');
+    };
+  </script>
+
+</body>
+</html>
