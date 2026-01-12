@@ -1,0 +1,212 @@
+/* Estilos para páginas de termos, privacidade e cookies */
+.terms-container, .privacy-container, .cookies-container {
+  max-width: 700px;
+  margin: 60px auto 40px auto;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+  padding: 40px 32px;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  color: #222;
+}
+
+.terms-container h1, .privacy-container h1, .cookies-container h1 {
+  font-size: 2.2rem;
+  margin-bottom: 18px;
+  color: #007bff;
+}
+
+.terms-container h2, .privacy-container h2, .cookies-container h2 {
+  font-size: 1.5rem;
+  margin-top: 20px;
+  margin-bottom: 12px;
+  color: #0056b3;
+}
+
+.terms-container ul, .privacy-container ul, .cookies-container ul {
+  margin: 18px 0 0 18px;
+  padding: 0;
+}
+
+.terms-container li, .privacy-container li, .cookies-container li {
+  margin-bottom: 10px;
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+.terms-container p, .privacy-container p, .cookies-container p {
+  margin-bottom: 12px;
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+/* Cookie consent box */
+#cookie-consent-box {
+  position: fixed;
+  bottom: 32px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #f8fafc;
+  border-radius: 18px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+  padding: 32px 36px 24px 36px;
+  z-index: 9999;
+  max-width: 420px;
+  min-width: 260px;
+  text-align: center;
+  font-size: 1.08rem;
+  color: #222;
+  display: none;
+  border: 1.5px solid #e0e0e0;
+  animation: fadeInUp 0.7s;
+}
+
+#cookie-consent-box .cookie-icon {
+  font-size: 2.5rem;
+  margin-bottom: 8px;
+  color: #ffb300;
+  display: block;
+}
+
+#cookie-consent-box .cookie-title {
+  font-size: 1.18rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #007bff;
+}
+
+#cookie-consent-box p {
+  margin-bottom: 10px;
+  color: #444;
+  font-size: 0.95rem;
+}
+
+#cookie-consent-box a {
+  color: #007bff;
+  text-decoration: underline;
+}
+
+#cookie-consent-box button {
+  margin-top: 18px;
+  background: linear-gradient(90deg,#007bff 60%,#00c6ff 100%);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 32px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0,123,255,0.08);
+  transition: background 0.2s, box-shadow 0.2s;
+}
+
+#cookie-consent-box button:hover {
+  background: linear-gradient(90deg,#0056b3 60%,#0099cc 100%);
+  box-shadow: 0 4px 16px rgba(0,123,255,0.13);
+}
+
+#cookie-consent-box.show {
+  display: block;
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translate(-50%, 40px); }
+  to { opacity: 1; transform: translate(-50%, 0); }
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .terms-container, .privacy-container, .cookies-container {
+    margin: 20px auto;
+    padding: 25px 20px;
+    border-radius: 12px;
+  }
+  
+  .terms-container h1, .privacy-container h1, .cookies-container h1 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+  }
+  
+  .terms-container h2, .privacy-container h2, .cookies-container h2 {
+    font-size: 1.2rem;
+    margin-top: 15px;
+    margin-bottom: 10px;
+  }
+  
+  .terms-container ul, .privacy-container ul, .cookies-container ul {
+    margin: 12px 0 0 15px;
+  }
+  
+  .terms-container li, .privacy-container li, .cookies-container li {
+    font-size: 0.9rem;
+    margin-bottom: 8px;
+  }
+  
+  .terms-container p, .privacy-container p, .cookies-container p {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .terms-container, .privacy-container, .cookies-container {
+    margin: 15px 10px;
+    padding: 20px 15px;
+    border-radius: 10px;
+  }
+  
+  .terms-container h1, .privacy-container h1, .cookies-container h1 {
+    font-size: 1.3rem;
+    margin-bottom: 12px;
+  }
+  
+  .terms-container h2, .privacy-container h2, .cookies-container h2 {
+    font-size: 1.1rem;
+    margin-top: 12px;
+    margin-bottom: 8px;
+  }
+  
+  .terms-container ul, .privacy-container ul, .cookies-container ul {
+    margin: 10px 0 0 12px;
+  }
+  
+  .terms-container li, .privacy-container li, .cookies-container li {
+    font-size: 0.85rem;
+    margin-bottom: 6px;
+  }
+  
+  .terms-container p, .privacy-container p, .cookies-container p {
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 600px) {
+  #cookie-consent-box {
+    max-width: 95vw;
+    width: 95vw;
+    padding: 18px 6vw 16px 6vw;
+    font-size: 0.95rem;
+    bottom: 16px;
+    left: 2.5vw;
+    right: 2.5vw;
+    transform: none;
+  }
+  
+  #cookie-consent-box .cookie-icon {
+    font-size: 2rem;
+  }
+  
+  #cookie-consent-box .cookie-title {
+    font-size: 1rem;
+  }
+  
+  #cookie-consent-box p {
+    font-size: 0.85rem;
+    margin-bottom: 8px;
+  }
+  
+  #cookie-consent-box button {
+    padding: 8px 16px;
+    font-size: 0.9rem;
+    margin-top: 12px;
+  }
+}

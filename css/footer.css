@@ -1,0 +1,235 @@
+/* Footer Styles */
+.footer {
+    background-color: var(--primary-color);
+    color: rgba(255, 255, 255, 0.9);
+    padding: 60px 0 30px;
+}
+
+.footer h4 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 25px;
+    color: #fff;
+}
+
+.footer-info p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    margin-bottom: 12px;
+}
+
+.footer-links a {
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #fff;
+    padding-left: 5px;
+}
+
+.footer-contact .location-info p {
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.footer-contact .contact-methods i {
+    font-size: 1.1rem;
+}
+
+.social-links {
+    gap: 15px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.social-links a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    transition: all 0.3s ease;
+}
+
+.social-links a:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateY(-3px);
+}
+
+.social-links i {
+    font-size: 1.2rem;
+}
+
+.copyright {
+    padding-top: 30px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    text-align: center;
+}
+
+.copyright p {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 0.9rem;
+    margin: 0;
+}
+
+.btn-outline-light {
+    border-color: rgba(255, 255, 255, 0.5);
+    color: #fff;
+    display: inline-block;
+    font-size: 0.9rem;
+    padding: 6px 12px;
+}
+
+.btn-outline-light:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-color: #fff;
+}
+
+/* Tablet and Small Desktop */
+@media (max-width: 991px) {
+    .footer {
+        padding: 40px 0 20px;
+    }
+    
+    .footer h4 {
+        font-size: 1.1rem;
+        margin-bottom: 15px;
+    }
+    
+    .footer-contact {
+        margin-top: 30px;
+    }
+    
+    .social-links {
+        justify-content: center;
+    }
+}
+
+/* Tablet (768px - 991px) */
+@media (max-width: 768px) {
+    .footer {
+        padding: 30px 0 15px;
+    }
+    
+    .footer h4 {
+        font-size: 1rem;
+        margin-bottom: 12px;
+    }
+    
+    .footer-info p {
+        font-size: 0.9rem;
+    }
+    
+    .footer-links li {
+        margin-bottom: 8px;
+    }
+    
+    .footer-contact {
+        margin-top: 20px;
+    }
+    
+    .footer-contact .location-info p {
+        font-size: 0.85rem;
+    }
+    
+    .social-links {
+        justify-content: center;
+        gap: 12px;
+    }
+    
+    .social-links a {
+        width: 36px;
+        height: 36px;
+    }
+    
+    .copyright {
+        padding-top: 20px;
+    }
+    
+    .copyright p {
+        font-size: 0.85rem;
+    }
+}
+
+/* Mobile (< 576px) */
+@media (max-width: 575px) {
+    .footer {
+        padding: 20px 0 10px;
+    }
+    
+    .footer h4 {
+        font-size: 0.95rem;
+        margin-bottom: 10px;
+    }
+    
+    .footer-info p {
+        font-size: 0.85rem;
+        line-height: 1.5;
+    }
+    
+    .footer-links li {
+        margin-bottom: 6px;
+    }
+    
+    .footer-links a {
+        font-size: 0.85rem;
+    }
+    
+    .footer-contact .location-info {
+        margin-bottom: 15px;
+        padding-bottom: 15px;
+        border-bottom: 1px solid rgba(255,255,255,0.1);
+    }
+    
+    .footer-contact .location-info p {
+        font-size: 0.8rem;
+        margin-bottom: 5px;
+    }
+    
+    .footer-contact .contact-methods p {
+        font-size: 0.85rem;
+        margin-bottom: 8px;
+    }
+    
+    .social-links {
+        justify-content: center;
+        gap: 10px;
+        margin-top: 15px;
+    }
+    
+    .social-links a {
+        width: 32px;
+        height: 32px;
+    }
+    
+    .social-links i {
+        font-size: 1rem;
+    }
+    
+    .copyright {
+        padding-top: 15px;
+        margin-top: 15px;
+    }
+    
+    .copyright p {
+        font-size: 0.8rem;
+    }
+    
+    .btn-outline-light {
+        font-size: 0.8rem;
+        padding: 5px 10px;
+    }
+}
